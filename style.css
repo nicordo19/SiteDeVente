@@ -1,0 +1,136 @@
+#inputR {
+  width: 100rem;
+  height: 2rem;
+  display: flex;
+  align-self: center;
+  font-size: 1.4rem;
+  margin: 2rem;
+  border-radius: 2rem; /*Coins arrondis */
+  border: 2.5px solid #3c3737; /* Bordure de l'input*/
+}
+
+body {
+  background-color: rgb(214, 255, 196);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Assure que le body prend toute la hauteur de la page */
+  margin: 0;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+image {
+  max-width: 100%;
+}
+.container {
+  max-width: 114rem;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 1200px) {
+  .container {
+    padding: 0 3rem;
+  }
+}
+.navigation {
+  height: 5rem;
+  justify-content: space-between;
+}
+.icon1 {
+  display: none;
+}
+.menu .top {
+  display: none;
+}
+.d-flex {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 2rem;
+  padding: 0rem 1.5rem;
+}
+.logo span {
+  font-size: 3rem;
+  color: blue;
+}
+.nav-item:not(:last-child) {
+  margin: 0.5rem;
+}
+.nav-item:first-child .nav-link {
+  color: blue;
+}
+.nav-link {
+  padding: 5rem 4rem;
+  transition: all 700ms ease-in-out;
+  font-size: 1.4rem;
+}
+.nav-link:hover {
+  color: blue;
+}
+.nav .icons div {
+  font-size: 2rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+}
+.nav .icons div:last-child {
+  margin-right: 0, 5rem;
+}
+.nav .icons div:hover {
+  color: blue;
+}
+.nav .icons div span {
+  position: absolute;
+  top: 0rem;
+  right: 0rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+  background-color: blue;
+  height: 1.4rem;
+  width: 1.4rem;
+  border-radius: 50%;
+}
+.align-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#messageAccueil {
+  text-align: center;
+  color: rgb(18, 17, 17);
+}
+/* Footer stylisé */
+.footer {
+  background-color: #333; /* Fond sombre */
+  color: white; /* Texte blanc */
+  padding: 20px; /* Espacement intérieur */
+  text-align: center; /* Centrage du texte */
+  width: 100%; /* Largeur complète */
+}
+
+.footer .pages {
+  margin-top: 10px;
+}
+
+.footer .pages a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+.footer .pages a:hover {
+  color: #00bcd4;
+}
