@@ -1,0 +1,77 @@
+/* Reset des marges et des espacements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Style du corps de la page */
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgb(214, 255, 196);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Conteneur principal */
+#containeraiIdentifiant {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+}
+
+/* Titre de connexion */
+.connexion {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Style des labels */
+label {
+  display: block;
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+/* Style des champs de saisie */
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Style du bouton */
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #0b4ae9;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0518ee;
+}
+
+/* Accessibilité pour les champs */
+input:focus,
+button:focus {
+  outline: none;
+  border-color: #4caf50;
+}

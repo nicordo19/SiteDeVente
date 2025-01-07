@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formulaire d'Inscription</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style/inscription.css" />
+    <script defer src="script.js"></script>
   </head>
   <body>
     <div class="container">
@@ -26,10 +27,25 @@
           name="confirm-password"
           required
         />
+        <label for="adresse">Numero et Nom de la Rue</label>
+        <input type="adresse" id="adresse" name="adresse" required />
 
+        <label for="departement">Departement</label>
+        <input
+          type="departement"
+          id="departement"
+          name="departement"
+          required
+        />
         <button type="submit">S'inscrire</button>
       </form>
-      <p id="message"></p>
+      <footer class="footer">
+        <p>&copy; 2025 EcoFashion</p>
+        <div class="pages">
+          <a href="page/footer/contac.html">Contact</a>
+          <a href="page/footer/MontionLegal.html">Mention Légale</a>
+        </div>
+      </footer>
     </div>
     <script src="script.js"></script>
   </body>

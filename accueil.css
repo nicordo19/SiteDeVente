@@ -106,12 +106,76 @@ image {
   align-items: center;
   justify-content: center;
 }
+@media only screen and (max-width: 768px) {
+  .navigation {
+    padding: 1rem 0;
+  }
+  .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* left: -100%; */
+    background-color: white;
+    height: 100%;
+    width: 80%;
+    max-width: 45rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all ease-in-out;
+    z-index: 100;
+  }
+  .icon1 {
+    display: none;
+    font-size: 3rem;
+    cursor: pointer;
+  }
+  .icons {
+    display: none;
+  }
+  .logo span {
+    color: blue;
+  }
+  .logo a {
+    font-size: 1.6rem;
+    font-weight: 400;
+  }
+  .menu .top {
+    display: block;
+    position: relative;
+    background-color: blue;
+    width: 100%;
+    height: 6rem;
+    color: white;
+  }
+  .top span {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  .top span i {
+    font-size: 3rem;
+  }
+  .nav_list {
+    flex-direction: column;
+    align-items: start;
+    padding: 2rem 0;
+  }
+  .nav-item {
+    margin: 0 0 2rem 0;
+  }
+  .nav-link {
+    padding: 0.7rem;
+  }
+}
 
 #messageAccueil {
   text-align: center;
   color: rgb(18, 17, 17);
 }
-/* Footer stylisé */
 .footer {
   background-color: #333; /* Fond sombre */
   color: white; /* Texte blanc */
@@ -119,18 +183,15 @@ image {
   text-align: center; /* Centrage du texte */
   width: 100%; /* Largeur complète */
 }
-
 .footer .pages {
   margin-top: 10px;
 }
-
 .footer .pages a {
   color: white;
   text-decoration: none;
   margin: 0 10px;
   transition: color 0.3s;
 }
-
 .footer .pages a:hover {
   color: #00bcd4;
 }
