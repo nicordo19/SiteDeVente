@@ -1,5 +1,5 @@
 #inputR {
-  width: 100rem;
+  width: 60rem;
   height: 2rem;
   display: flex;
   align-self: center;
@@ -8,14 +8,15 @@
   border-radius: 2rem; /*Coins arrondis */
   border: 2.5px solid #3c3737; /* Bordure de l'input*/
 }
-
+html,
 body {
-  background-color: rgb(214, 255, 196);
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh; /* Assure que le body prend toute la hauteur de la page */
-  margin: 0;
+  margin: 0; /* Supprime les marges par défaut */
+  padding: 10; /* Supprime les espacements par défaut */
+  height: 100%; /* S'assure que l'élément couvre toute la hauteur de l'écran */
+  width: 100%; /* S'assure que l'élément couvre toute la largeur */
+  background: url(https://plus.unsplash.com/premium_photo-1664202525979-80d1da46b34b?q=80&w=2671&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
+    no-repeat center center;
+  background-size: cover;
 }
 
 ul,
@@ -27,14 +28,14 @@ a {
   text-decoration: none;
   color: inherit;
 }
-image {
-  max-width: 100%;
-}
+
 .container {
   max-width: 114rem;
-  margin: 0 auto;
+  margin: 0 auto; /* Centrage horizontal */
+  padding: 0 1rem; /* Ajout d'un padding pour éviter les débordements */
+  overflow: hidden; /* Empêche les débordements d'éléments internes */
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 768px) {
   .container {
     padding: 0 3rem;
   }
@@ -56,11 +57,11 @@ image {
 
 .logo {
   font-weight: 700;
-  font-size: 2rem;
-  padding: 0rem 1.5rem;
+  font-size: 1rem;
+  padding: 1;
 }
 .logo span {
-  font-size: 3rem;
+  font-size: 2rem;
   color: blue;
 }
 .nav-item:not(:last-child) {
@@ -70,28 +71,29 @@ image {
   color: blue;
 }
 .nav-link {
-  padding: 5rem 4rem;
-  transition: all 700ms ease-in-out;
+  padding: 1rem;
+  transition: all 600 ease-in-out;
   font-size: 1.4rem;
 }
 .nav-link:hover {
   color: blue;
 }
 .nav .icons div {
-  font-size: 2rem;
-  padding: 0.5rem;
+  font-size: 30px;
+  padding: 0.5 0rem;
   cursor: pointer;
-  transition: all 300ms ease-in-out;
+  transition: all 200ms ease-in-out;
+  margin: 1px; /* Supprime les marges inutiles */
 }
 .nav .icons div:last-child {
-  margin-right: 0, 5rem;
+  margin-right: 0, 3rem;
 }
 .nav .icons div:hover {
   color: blue;
 }
 .nav .icons div span {
   position: absolute;
-  top: 0rem;
+  top: 1rem;
   right: 0rem;
   font-size: 1.1rem;
   font-weight: 600;
@@ -125,7 +127,7 @@ image {
   }
   .icon1 {
     display: none;
-    font-size: 3rem;
+    font-size: 1rem;
     cursor: pointer;
   }
   .icons {
@@ -135,7 +137,7 @@ image {
     color: blue;
   }
   .logo a {
-    font-size: 1.6rem;
+    font-size: 1rem;
     font-weight: 400;
   }
   .menu .top {
@@ -143,7 +145,7 @@ image {
     position: relative;
     background-color: blue;
     width: 100%;
-    height: 6rem;
+    height: 5rem;
     color: white;
   }
   .top span {
@@ -162,10 +164,10 @@ image {
   .nav_list {
     flex-direction: column;
     align-items: start;
-    padding: 2rem 0;
+    padding: 1rem;
   }
   .nav-item {
-    margin: 0 0 2rem 0;
+    margin: 1rem 0;
   }
   .nav-link {
     padding: 0.7rem;
@@ -174,22 +176,26 @@ image {
 
 #messageAccueil {
   text-align: center;
+  padding: 2rem;
   color: rgb(18, 17, 17);
 }
 .footer {
+  position: fixed;
+  bottom: 0;
   background-color: #333; /* Fond sombre */
   color: white; /* Texte blanc */
-  padding: 20px; /* Espacement intérieur */
+  padding: 11; /* Espacement intérieur */
   text-align: center; /* Centrage du texte */
   width: 100%; /* Largeur complète */
+  flex-direction: column;
 }
 .footer .pages {
-  margin-top: 10px;
+  margin-top: 0px;
 }
 .footer .pages a {
   color: white;
   text-decoration: none;
-  margin: 0 10px;
+  margin: ;
   transition: color 0.3s;
 }
 .footer .pages a:hover {

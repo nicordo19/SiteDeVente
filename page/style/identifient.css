@@ -18,7 +18,7 @@ body {
 
 /* Conteneur principal */
 #containeraiIdentifiant {
-  background-color: white;
+  background-color: rgba(149, 144, 144, 0.472);
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
